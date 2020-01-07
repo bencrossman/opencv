@@ -1735,12 +1735,12 @@ inline v_int16x32 v_interleave_quads(const v_int16x32& vec)
 }
 inline v_uint16x32 v_interleave_quads(const v_uint16x32& vec) { return v_reinterpret_as_u16(v_interleave_quads(v_reinterpret_as_s16(vec))); }
 
-inline v_int32x16 v_interleave_pairs(const v_int32x16& vec)
+/*inline v_int32x16 v_interleave_pairs(const v_int32x16& vec)
 {
     return v_int32x16(_mm512_shuffle_epi32(vec.val, _MM_PERM_ACBD));
 }
 inline v_uint32x16 v_interleave_pairs(const v_uint32x16& vec) { return v_reinterpret_as_u32(v_interleave_pairs(v_reinterpret_as_s32(vec))); }
-inline v_float32x16 v_interleave_pairs(const v_float32x16& vec) { return v_reinterpret_as_f32(v_interleave_pairs(v_reinterpret_as_s32(vec))); }
+inline v_float32x16 v_interleave_pairs(const v_float32x16& vec) { return v_reinterpret_as_f32(v_interleave_pairs(v_reinterpret_as_s32(vec))); }*/
 
 inline v_int8x64 v_pack_triplets(const v_int8x64& vec)
 {
