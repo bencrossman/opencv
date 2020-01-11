@@ -1,13 +1,27 @@
 Install CUDA
 Install TBB
 
-BUILD_EXAMPLES = ON
-BUILD_SHARED_LIBS = OFF
-BUILD_TESTS = OFF
-BUILD_PERF_TEST = OFF
-BUILD_opencv_python_tests = OFF
-BUILD_PACKAGE = OFF
+Enable
+~~~~~~
+BUILD_EXAMPLES
 WITH_CUDA
 WITH_TBB
+
+Disable
+~~~~~~~
+BUILD_SHARED_LIBS
+BUILD_TESTS
+BUILD_PERF_TEST
+BUILD_opencv_python_tests
+BUILD_opencv_apps
+BUILD_opencv_java_bindings_generator
+BUILD_opencv_python_bindings_generator
+BUILD_PACKAGE
+
+TBB_DIR = C:/Program Files (x86)/IntelSWTools/compilers_and_libraries_2020/windows/tbb (This seems to keep resetting)
+TBB_ENV_INCLUDE = C:/Program Files (x86)/IntelSWTools/compilers_and_libraries_2020/windows/tbb/include
+TBB_ENV_LIB = C:/Program Files (x86)/IntelSWTools/compilers_and_libraries_2020/windows/tbb/lib/intel64_win/vc14/tbb.lib
+TBB_ENV_LIB_DEBUG = C:/Program Files (x86)/IntelSWTools/compilers_and_libraries_2020/windows/tbb/lib/intel64_win/vc14/tbb_debug.lib
+
 OPENCV_EXTRA_MODULES_PATH = C:/Users/ben/Desktop/Tracker/opencv_contrib/modules
 
