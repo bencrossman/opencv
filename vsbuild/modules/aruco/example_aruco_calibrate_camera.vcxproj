@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{2092D91F-9977-3409-B509-FDA0CA263BDC}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>(sample) calibrate_camera</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ben\Desktop\Tracker\Final</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">example_aruco_calibrate_camera.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">example_aruco_calibrate_camera_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ben\Desktop\Tracker\Final</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">example_aruco_calibrate_camera.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">example_aruco_calibrate_camera</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\ben\Desktop\Tracker\opencv\vsbuild;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\aruco\src;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\aruco\include;C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\aruco;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\cudev\include;C:\Users\ben\Desktop\Tracker\opencv\modules\core\include;C:\Users\ben\Desktop\Tracker\opencv\modules\flann\include;C:\Users\ben\Desktop\Tracker\opencv\modules\imgproc\include;C:\Users\ben\Desktop\Tracker\opencv\modules\features2d\include;C:\Users\ben\Desktop\Tracker\opencv\modules\calib3d\include;C:\Users\ben\Desktop\Tracker\opencv\modules\video\include;C:\Users\ben\Desktop\Tracker\opencv\modules\imgcodecs\include;C:\Users\ben\Desktop\Tracker\opencv\modules\videoio\include;C:\Users\ben\Desktop\Tracker\opencv\modules\highgui\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4251;4324;4275;4512;4589</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProcessorNumber>4</ProcessorNumber>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;__OPENCV_BUILD=1;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;__OPENCV_BUILD=1;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\ben\Desktop\Tracker\opencv\vsbuild;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\aruco\src;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\aruco\include;C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\aruco;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\cudev\include;C:\Users\ben\Desktop\Tracker\opencv\modules\core\include;C:\Users\ben\Desktop\Tracker\opencv\modules\flann\include;C:\Users\ben\Desktop\Tracker\opencv\modules\imgproc\include;C:\Users\ben\Desktop\Tracker\opencv\modules\features2d\include;C:\Users\ben\Desktop\Tracker\opencv\modules\calib3d\include;C:\Users\ben\Desktop\Tracker\opencv\modules\video\include;C:\Users\ben\Desktop\Tracker\opencv\modules\imgcodecs\include;C:\Users\ben\Desktop\Tracker\opencv\modules\videoio\include;C:\Users\ben\Desktop\Tracker\opencv\modules\highgui\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\ben\Desktop\Tracker\opencv\vsbuild;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\aruco\src;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\aruco\include;C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\aruco;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\cudev\include;C:\Users\ben\Desktop\Tracker\opencv\modules\core\include;C:\Users\ben\Desktop\Tracker\opencv\modules\flann\include;C:\Users\ben\Desktop\Tracker\opencv\modules\imgproc\include;C:\Users\ben\Desktop\Tracker\opencv\modules\features2d\include;C:\Users\ben\Desktop\Tracker\opencv\modules\calib3d\include;C:\Users\ben\Desktop\Tracker\opencv\modules\video\include;C:\Users\ben\Desktop\Tracker\opencv\modules\imgcodecs\include;C:\Users\ben\Desktop\Tracker\opencv\modules\videoio\include;C:\Users\ben\Desktop\Tracker\opencv\modules\highgui\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Debug\opencv_aruco420d.lib;..\..\lib\Debug\opencv_cudev420d.lib;..\..\lib\Debug\opencv_core420d.lib;..\..\lib\Debug\opencv_flann420d.lib;..\..\lib\Debug\opencv_imgproc420d.lib;..\..\lib\Debug\opencv_features2d420d.lib;..\..\lib\Debug\opencv_calib3d420d.lib;..\..\lib\Debug\opencv_video420d.lib;..\..\lib\Debug\opencv_imgcodecs420d.lib;..\..\lib\Debug\opencv_videoio420d.lib;..\..\lib\Debug\opencv_highgui420d.lib;..\..\lib\Debug\opencv_calib3d420d.lib;..\..\lib\Debug\opencv_features2d420d.lib;..\..\lib\Debug\opencv_flann420d.lib;..\..\lib\Debug\opencv_videoio420d.lib;..\..\lib\Debug\opencv_imgcodecs420d.lib;..\..\lib\Debug\opencv_imgproc420d.lib;..\..\lib\Debug\opencv_core420d.lib;..\..\lib\Debug\opencv_cudev420d.lib;..\..\3rdparty\lib\Debug\ittnotifyd.lib;..\..\3rdparty\lib\Debug\libjpeg-turbod.lib;..\..\3rdparty\lib\Debug\libwebpd.lib;..\..\3rdparty\lib\Debug\libpngd.lib;..\..\3rdparty\lib\Debug\libtiffd.lib;..\..\3rdparty\lib\Debug\libjasperd.lib;..\..\3rdparty\lib\Debug\IlmImfd.lib;..\..\3rdparty\lib\Debug\zlibd.lib;..\..\3rdparty\lib\Debug\ippiwd.lib;..\..\3rdparty\ippicv\ippicv_win\icv\lib\intel64\ippicvmt.lib;-LIBPATH:C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/lib/x64;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;cudart.lib;nppc.lib;nppial.lib;nppicc.lib;nppicom.lib;nppidei.lib;nppif.lib;nppig.lib;nppim.lib;nppist.lib;nppisu.lib;nppitc.lib;npps.lib;cublas.lib;cufft.lib;cudart.lib;nppc.lib;nppial.lib;nppicc.lib;nppicom.lib;nppidei.lib;nppif.lib;nppig.lib;nppim.lib;nppist.lib;nppisu.lib;nppitc.lib;npps.lib;cublas.lib;cufft.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>atlthunk.lib;libcmt.lib;libcpmt.lib;msvcrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/ben/Desktop/Tracker/opencv/vsbuild/bin/Debug/example_aruco_calibrate_camera.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/ben/Desktop/Tracker/opencv/vsbuild/bin/Debug/example_aruco_calibrate_camera.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\ben\Desktop\Tracker\opencv\vsbuild;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\aruco\src;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\aruco\include;C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\aruco;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\cudev\include;C:\Users\ben\Desktop\Tracker\opencv\modules\core\include;C:\Users\ben\Desktop\Tracker\opencv\modules\flann\include;C:\Users\ben\Desktop\Tracker\opencv\modules\imgproc\include;C:\Users\ben\Desktop\Tracker\opencv\modules\features2d\include;C:\Users\ben\Desktop\Tracker\opencv\modules\calib3d\include;C:\Users\ben\Desktop\Tracker\opencv\modules\video\include;C:\Users\ben\Desktop\Tracker\opencv\modules\imgcodecs\include;C:\Users\ben\Desktop\Tracker\opencv\modules\videoio\include;C:\Users\ben\Desktop\Tracker\opencv\modules\highgui\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4127;4251;4324;4275;4512;4589</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProcessorNumber>4</ProcessorNumber>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;__OPENCV_BUILD=1;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;__OPENCV_BUILD=1;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\ben\Desktop\Tracker\opencv\vsbuild;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\aruco\src;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\aruco\include;C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\aruco;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\cudev\include;C:\Users\ben\Desktop\Tracker\opencv\modules\core\include;C:\Users\ben\Desktop\Tracker\opencv\modules\flann\include;C:\Users\ben\Desktop\Tracker\opencv\modules\imgproc\include;C:\Users\ben\Desktop\Tracker\opencv\modules\features2d\include;C:\Users\ben\Desktop\Tracker\opencv\modules\calib3d\include;C:\Users\ben\Desktop\Tracker\opencv\modules\video\include;C:\Users\ben\Desktop\Tracker\opencv\modules\imgcodecs\include;C:\Users\ben\Desktop\Tracker\opencv\modules\videoio\include;C:\Users\ben\Desktop\Tracker\opencv\modules\highgui\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\ben\Desktop\Tracker\opencv\vsbuild;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\aruco\src;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\aruco\include;C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\aruco;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\cudev\include;C:\Users\ben\Desktop\Tracker\opencv\modules\core\include;C:\Users\ben\Desktop\Tracker\opencv\modules\flann\include;C:\Users\ben\Desktop\Tracker\opencv\modules\imgproc\include;C:\Users\ben\Desktop\Tracker\opencv\modules\features2d\include;C:\Users\ben\Desktop\Tracker\opencv\modules\calib3d\include;C:\Users\ben\Desktop\Tracker\opencv\modules\video\include;C:\Users\ben\Desktop\Tracker\opencv\modules\imgcodecs\include;C:\Users\ben\Desktop\Tracker\opencv\modules\videoio\include;C:\Users\ben\Desktop\Tracker\opencv\modules\highgui\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Release\opencv_aruco420.lib;..\..\lib\Release\opencv_cudev420.lib;..\..\lib\Release\opencv_core420.lib;..\..\lib\Release\opencv_flann420.lib;..\..\lib\Release\opencv_imgproc420.lib;..\..\lib\Release\opencv_features2d420.lib;..\..\lib\Release\opencv_calib3d420.lib;..\..\lib\Release\opencv_video420.lib;..\..\lib\Release\opencv_imgcodecs420.lib;..\..\lib\Release\opencv_videoio420.lib;..\..\lib\Release\opencv_highgui420.lib;..\..\lib\Release\opencv_calib3d420.lib;..\..\lib\Release\opencv_features2d420.lib;..\..\lib\Release\opencv_flann420.lib;..\..\lib\Release\opencv_videoio420.lib;..\..\lib\Release\opencv_imgcodecs420.lib;..\..\lib\Release\opencv_imgproc420.lib;..\..\lib\Release\opencv_core420.lib;..\..\lib\Release\opencv_cudev420.lib;..\..\3rdparty\lib\Release\ittnotify.lib;..\..\3rdparty\lib\Release\libjpeg-turbo.lib;..\..\3rdparty\lib\Release\libwebp.lib;..\..\3rdparty\lib\Release\libpng.lib;..\..\3rdparty\lib\Release\libtiff.lib;..\..\3rdparty\lib\Release\libjasper.lib;..\..\3rdparty\lib\Release\IlmImf.lib;..\..\3rdparty\lib\Release\zlib.lib;..\..\3rdparty\lib\Release\ippiw.lib;..\..\3rdparty\ippicv\ippicv_win\icv\lib\intel64\ippicvmt.lib;-LIBPATH:C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/lib/x64;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;cudart.lib;nppc.lib;nppial.lib;nppicc.lib;nppicom.lib;nppidei.lib;nppif.lib;nppig.lib;nppim.lib;nppist.lib;nppisu.lib;nppitc.lib;npps.lib;cublas.lib;cufft.lib;cudart.lib;nppc.lib;nppial.lib;nppicc.lib;nppicom.lib;nppidei.lib;nppif.lib;nppig.lib;nppim.lib;nppist.lib;nppisu.lib;nppitc.lib;npps.lib;cublas.lib;cufft.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>atlthunk.lib;libcmtd.lib;libcpmtd.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/ben/Desktop/Tracker/opencv/vsbuild/bin/Release/example_aruco_calibrate_camera.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/ben/Desktop/Tracker/opencv/vsbuild/bin/Release/example_aruco_calibrate_camera.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\aruco\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/ben/Desktop/Tracker/opencv_contrib/modules/aruco/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/ben/Desktop/Tracker/opencv -BC:/Users/ben/Desktop/Tracker/opencv/vsbuild --check-stamp-file C:/Users/ben/Desktop/Tracker/opencv/vsbuild/modules/aruco/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/ben/Desktop/Tracker/opencv_contrib/modules/aruco/CMakeLists.txt;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\aruco\CMakeLists.txt;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\aruco\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\aruco\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/ben/Desktop/Tracker/opencv_contrib/modules/aruco/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/ben/Desktop/Tracker/opencv -BC:/Users/ben/Desktop/Tracker/opencv/vsbuild --check-stamp-file C:/Users/ben/Desktop/Tracker/opencv/vsbuild/modules/aruco/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/ben/Desktop/Tracker/opencv_contrib/modules/aruco/CMakeLists.txt;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\aruco\CMakeLists.txt;C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\aruco\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\aruco\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\ben\Desktop\Tracker\opencv_contrib\modules\aruco\samples\calibrate_camera.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\ZERO_CHECK.vcxproj">
+      <Project>{52DFB2BE-42E6-3728-91F9-B0530136221E}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\openexr\IlmImf.vcxproj">
+      <Project>{4DACDE65-887D-3F6F-AB4C-056C342D6D18}</Project>
+      <Name>IlmImf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\ippiw\ippiw.vcxproj">
+      <Project>{6C6C1204-323C-3F85-8E07-B2A68774FE5B}</Project>
+      <Name>ippiw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\ittnotify\ittnotify.vcxproj">
+      <Project>{9D10E2E7-7254-3CB4-8FE8-0C686EBB7700}</Project>
+      <Name>ittnotify</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\libjasper\libjasper.vcxproj">
+      <Project>{4519521C-5664-3C97-9277-24AC6E3D2C02}</Project>
+      <Name>libjasper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\libjpeg-turbo\libjpeg-turbo.vcxproj">
+      <Project>{65590439-B14C-349A-8B5F-BBDC89086E25}</Project>
+      <Name>libjpeg-turbo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\libpng\libpng.vcxproj">
+      <Project>{5E788D53-222E-3C23-AE81-6FF1BA523A52}</Project>
+      <Name>libpng</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\libtiff\libtiff.vcxproj">
+      <Project>{48340DF5-0515-363B-8406-27DDBBE1179C}</Project>
+      <Name>libtiff</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\libwebp\libwebp.vcxproj">
+      <Project>{691EB992-7341-36AE-840A-EB1D38052E31}</Project>
+      <Name>libwebp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\aruco\opencv_aruco.vcxproj">
+      <Project>{E21823B2-EFBA-3ACE-B59F-07672205EEC3}</Project>
+      <Name>opencv_aruco</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\calib3d\opencv_calib3d.vcxproj">
+      <Project>{6F247559-921F-3901-8B1E-23920A24F5E9}</Project>
+      <Name>opencv_calib3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\core\opencv_core.vcxproj">
+      <Project>{B3D99989-3FC6-307C-BF8E-D8366E47E34E}</Project>
+      <Name>opencv_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\cudev\opencv_cudev.vcxproj">
+      <Project>{924AC2C0-F223-3BF2-9E52-490289E18382}</Project>
+      <Name>opencv_cudev</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\features2d\opencv_features2d.vcxproj">
+      <Project>{B465E99D-6F6D-3EDD-874E-E8842EC93903}</Project>
+      <Name>opencv_features2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\flann\opencv_flann.vcxproj">
+      <Project>{DAD0A894-0AF7-33A8-AB96-033252F8FDF5}</Project>
+      <Name>opencv_flann</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\highgui\opencv_highgui.vcxproj">
+      <Project>{36495F85-F25E-32EB-8649-2BA0DAE1F015}</Project>
+      <Name>opencv_highgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\imgcodecs\opencv_imgcodecs.vcxproj">
+      <Project>{1263C3A0-2FCE-3081-BA41-7F1305EB5AD5}</Project>
+      <Name>opencv_imgcodecs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\imgproc\opencv_imgproc.vcxproj">
+      <Project>{45187DEE-1E52-3DDE-AEF1-28A6E50CC367}</Project>
+      <Name>opencv_imgproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\video\opencv_video.vcxproj">
+      <Project>{3366E3AC-61B3-3E2D-A20B-CD4D44738675}</Project>
+      <Name>opencv_video</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\videoio\opencv_videoio.vcxproj">
+      <Project>{49F8A247-4E40-377B-A5DB-955F4978E570}</Project>
+      <Name>opencv_videoio</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\modules\.firstpass\videoio\opencv_videoio_plugins.vcxproj">
+      <Project>{5302B2D7-D123-3B22-9847-CEDBA36FA838}</Project>
+      <Name>opencv_videoio_plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ben\Desktop\Tracker\opencv\vsbuild\3rdparty\zlib\zlib.vcxproj">
+      <Project>{0E17202E-41A2-33E2-A2E1-87D7753858D4}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,13 @@
+Install CUDA
+Install TBB
+
+BUILD_EXAMPLES = ON
+BUILD_SHARED_LIBS = OFF
+BUILD_TESTS = OFF
+BUILD_PERF_TEST = OFF
+BUILD_opencv_python_tests = OFF
+BUILD_PACKAGE = OFF
+WITH_CUDA
+WITH_TBB
+OPENCV_EXTRA_MODULES_PATH = C:/Users/ben/Desktop/Tracker/opencv_contrib/modules
+
