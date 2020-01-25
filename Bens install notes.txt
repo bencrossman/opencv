@@ -25,3 +25,47 @@ TBB_ENV_LIB_DEBUG = C:/Program Files (x86)/IntelSWTools/compilers_and_libraries_
 
 OPENCV_EXTRA_MODULES_PATH = C:/Users/ben/Desktop/Tracker/opencv_contrib/modules
 
+
+
+Linux
+~~~~~
+sudo apt-get install libgtk2.0-dev
+sudo apt-get install ffmpeg libavcodec-dev libavcodec57 libavdevice-dev libavdevice57 libavfilter-dev libavfilter6 libavformat-dev libavformat57 libavresample-dev libavresample3 libavutil-dev libavutil55 libpostproc-dev libpostproc54 libswresample-dev libswresample2 libswscale-dev libswscale4
+
+mkdir Source
+ssh-keygen -t rsa
+grab ~/.ssh/id_rsa.pub
+git clone git@github.com:bencrossman/opencv.git
+git clone git@github.com:bencrossman/opencv_contrib.git
+git checkout BackToOpenCVCamera
+git clone https://github.com/yhirose/cpp-httplib.git
+git clone https://bencrossman13@bitbucket.org/jonbaginski1/opticaltracker.git Final
+
+ 
+mkdir opencv/build
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+      -D WITH_TBB=ON \
+      -D WITH_CUDA=ON \
+      -D BUILD_SHARED_LIBS=OFF \
+      -D BUILD_TESTS=OFF \
+      -D BUILD_PERF_TEST=OFF \
+      -D BUILD_opencv_python_tests=OFF \
+      -D BUILD_opencv_apps=OFF \
+      -D BUILD_opencv_java_bindings_generator=OFF \
+      -D BUILD_opencv_python_bindings_generator=OFF \
+      -D BUILD_PACKAGE=OFF \
+      -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
+      -D WITH_FFMPEG=ON \
+      -D WITH_LIBV4L=ON \
+      -D WITH_GSTREAMER=ON \
+      -D BUILD_EXAMPLES=ON ..
+      
+      
+
+        
+      libgtx2.0-dev pkg-config
+
+# This gives OpenCL / TBB / CUDAmae
+
+make
