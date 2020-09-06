@@ -37,7 +37,6 @@ ssh-keygen -t rsa
 grab ~/.ssh/id_rsa.pub
 git clone git@github.com:bencrossman/opencv.git
 git clone git@github.com:bencrossman/opencv_contrib.git
-git checkout BackToOpenCVCamera
 git clone https://github.com/yhirose/cpp-httplib.git
 git clone https://bencrossman13@bitbucket.org/jonbaginski1/opticaltracker.git Final
 
